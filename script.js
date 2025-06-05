@@ -10,3 +10,6 @@
     if (localStorage.getItem('isLoggedIn') !== 'true') {
       window.location.href = 'Loginpage.html';
     }
+
+localStorage.removeItem('isLoggedIn');
+  window.location.href = 'Loginpage.html';
