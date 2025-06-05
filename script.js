@@ -13,3 +13,11 @@ navToggler.addEventListener("click", function () {
   navbar.classList.toggle("active");
   this.classList.toggle("active");
 });
+
+ if (localStorage.getItem('isLoggedIn') !== 'true') {
+    window.location.href = 'Loginpage.html';
+  }
+
+  // On logout
+  localStorage.removeItem('isLoggedIn');
+  window.location.href = 'Loginpage.html';
